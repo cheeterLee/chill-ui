@@ -1,25 +1,22 @@
-import * as React from "react"
+import React from "react"
 
 export interface IButtonProps
 	extends React.DetailedHTMLProps<
 		React.ButtonHTMLAttributes<HTMLButtonElement>,
 		HTMLButtonElement
 	> {
-	backgroundColor?: string
-	color?: string
+	children?: React.ReactNode
+	variant: 'primary' | 'secondary'
 }
 
 export const Button: React.FunctionComponent<IButtonProps> = (props) => {
-	const { children, backgroundColor, color, style } = props
+	const { children, style, variant } = props
 
 	let _style: React.CSSProperties = style || {}
 
 	// Override Defaults
-	if (backgroundColor) _style.backgroundColor = backgroundColor
-	if (color) _style.color = color
-
 	return (
-		<button style={_style} {...props}>
+		<button className={variant === 'primary' ? 'bg-indigo-400' : 'bg-emerald-400'} style={_style} {...props}>
 			{children}
 		</button>
 	)
