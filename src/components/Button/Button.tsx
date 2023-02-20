@@ -1,5 +1,5 @@
 import React from "react"
-import { solidGenericStyle, outlineGenericStyle } from "./ButtonStyles"
+import { solidGenericStyle, outlineGenericStyle, colorSolid, colorOutline } from "./ButtonStyles"
 
 export interface IButtonProps
 	extends React.DetailedHTMLProps<
@@ -7,7 +7,7 @@ export interface IButtonProps
 		HTMLButtonElement
 	> {
 	children?: React.ReactNode
-	colorScheme?:
+	colorScheme:
 		| "slate"
 		| "gray"
 		| "zinc"
@@ -37,8 +37,8 @@ export interface IButtonProps
 export const Button: React.FunctionComponent<IButtonProps> = (props) => {
 	const { children, style, variant, colorScheme } = props
 
-	const solidStyle = `${solidGenericStyle} bg-${colorScheme}-400`
-	const outlineStyle = `${outlineGenericStyle} border-${colorScheme}-400 text-${colorScheme}-400`
+	const solidStyle = `${solidGenericStyle} ${colorSolid[colorScheme]}`
+	const outlineStyle = `${outlineGenericStyle} ${colorOutline[colorScheme]}`
 
 	let _style: React.CSSProperties = style || {}
 

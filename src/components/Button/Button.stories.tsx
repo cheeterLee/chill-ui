@@ -16,13 +16,25 @@ export const Solid1 = () => (
 )
 
 export const Solid2 = () => (
-	<Button variant="solid" colorScheme="red">
+	<Button variant="solid" colorScheme="indigo">
 		Solid2
+	</Button>
+)
+
+export const Solid3 = () => (
+	<Button variant="solid" colorScheme="red">
+		Solid3
 	</Button>
 )
 
 export const Outline1 = () => (
 	<Button variant="outline" colorScheme="red">
 		Outline1
+	</Button>
+)
+
+export const Outline2 = () => (
+	<Button variant="outline" colorScheme="teal">
+		Outline2
 	</Button>
 )
