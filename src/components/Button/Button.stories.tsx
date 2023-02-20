@@ -38,3 +38,9 @@ export const Outline2 = () => (
 		Outline2
 	</Button>
 )
+
+export const Outline3 = () => (
+	<Button variant="outline" colorScheme="emerald">
+		Outline3
+	</Button>
+)
