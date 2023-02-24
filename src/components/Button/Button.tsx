@@ -6,6 +6,7 @@ import {
 	colorSolid,
 	colorOutline,
 	colorGhost,
+	buttonSize,
 } from "./ButtonStyles"
 
 export interface IButtonProps
@@ -38,28 +39,29 @@ export interface IButtonProps
 		| "pink"
 		| "rose"
 	variant?: "solid" | "outline" | "ghost" | "link"
-	size?: "sm" | "md" | "lg"
+	size: "sm" | "md" | "lg"
 }
 
 export const Button: React.FunctionComponent<IButtonProps> = (props) => {
-	const { children, style, variant, colorScheme } = props
+	const { children, style, variant, colorScheme, size } = props
 
 	const solidStyle = `${solidGenericStyle} ${colorSolid[colorScheme]}`
 	const outlineStyle = `${outlineGenericStyle} ${colorOutline[colorScheme]}`
 	const ghostStyle = `${ghostGenericStyle} ${colorGhost[colorScheme]}`
+	const btnSize = `${buttonSize[size]}`
 
 	let _style: React.CSSProperties = style || {}
 
 	return (
 		<button
-			className={
-				variant === "solid"
+			className={`
+				${variant === "solid"
 					? `${solidStyle}`
 					: variant === "outline"
 					? `${outlineStyle}`
 					: variant === 'ghost'
 					? `${ghostStyle}`
-					: ``
+					: ``} ${btnSize}`
 			}
 			style={_style}
 			{...props}

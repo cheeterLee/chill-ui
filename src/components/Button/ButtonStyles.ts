@@ -4,6 +4,12 @@ export const outlineGenericStyle = `${solidGenericStyle} bg-transparent border-2
 
 export const ghostGenericStyle = `${solidGenericStyle} bg-transparant border-0`
 
+export const buttonSize = {
+	sm: 'py-0.5 px-2 text-sm',
+	md: 'py-0.75 px-3.5 text-md',
+	lg: 'py-1 px-5 text-lg',
+}
+
 export const colorSolid = {
     slate: 'bg-slate-300 hover:bg-slate-400',
     gray: 'bg-gray-300 hover:bg-gray-400',

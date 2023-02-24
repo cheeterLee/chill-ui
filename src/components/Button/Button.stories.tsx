@@ -11,13 +11,13 @@ export default meta
 
 export const Solid = () => (
 	<div style={{ display: 'flex', gap: '.5rem' }}>
-		<Button variant="solid" colorScheme="green">
+		<Button variant="solid" colorScheme="green" size="sm">
 			Solid1
 		</Button>
-		<Button variant="solid" colorScheme="indigo">
+		<Button variant="solid" colorScheme="indigo" size='md'>
 			Solid2
 		</Button>
-		<Button variant="solid" colorScheme="red">
+		<Button variant="solid" colorScheme="red" size='lg'>
 			Solid3
 		</Button>
 	</div>
@@ -25,13 +25,13 @@ export const Solid = () => (
 
 export const Outline = () => (
 	<div style={{ display: 'flex', gap: '.5rem' }}>
-		<Button variant="outline" colorScheme="red">
+		<Button variant="outline" colorScheme="red" size='sm'>
 			Outline1
 		</Button>
-		<Button variant="outline" colorScheme="teal">
+		<Button variant="outline" colorScheme="teal" size='md'>
 			Outline2
 		</Button>
-		<Button variant="outline" colorScheme="emerald">
+		<Button variant="outline" colorScheme="emerald" size='lg'>
 			Outline3
 		</Button>
 	</div>
@@ -39,13 +39,13 @@ export const Outline = () => (
 
 export const Ghost = () => (
 	<div style={{ display: 'flex', gap: '.5rem' }}>
-		<Button variant="ghost" colorScheme="slate">
+		<Button variant="ghost" colorScheme="slate" size='sm'>
 			Ghost1
 		</Button>
-		<Button variant="ghost" colorScheme="teal">
+		<Button variant="ghost" colorScheme="teal" size='md'>
 			Ghost2
 		</Button>
-		<Button variant="ghost" colorScheme="violet">
+		<Button variant="ghost" colorScheme="violet" size='lg'>
 			Ghost3
 		</Button>
 	</div>
