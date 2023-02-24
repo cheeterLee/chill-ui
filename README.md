@@ -7,3 +7,5 @@
 ![Rollup](https://img.shields.io/badge/rollup.js-EC4A3F.svg?style=for-the-badge&logo=rollupdotjs&logoColor=white)
 
 - Built upon [TailwindCSS](https://tailwindcss.com/).
+- Install command `npm i chill-ui`
+- NPM Package [link](https://www.npmjs.com/package/chill-ui).
