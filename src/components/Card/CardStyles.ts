@@ -1,4 +1,9 @@
-const cardGenericStyles = 'border border-gray-200 drop-shadow-md shadow-slate-300 flex flex-col'
+const cardGenericStyles = 'border border-gray-200 drop-shadow-md shadow-slate-300 flex'
+
+export const cardDirection = {
+    row: '',
+    col: 'flex-col'
+}
 
 export const cardStyles = {
     sm: `${cardGenericStyles} w-[200px] h-[200px] p-2`,

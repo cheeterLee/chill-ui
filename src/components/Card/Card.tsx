@@ -1,5 +1,5 @@
 import React from "react"
-import { cardStyles } from "./CardStyles"
+import { cardStyles, cardDirection } from "./CardStyles"
 
 export interface ICardProps
 	extends React.DetailedHTMLProps<
@@ -8,12 +8,13 @@ export interface ICardProps
 	> {
 	chidlren?: React.ReactNode
     size: 'sm' | 'md' | 'lg'
+	direction: 'row' | 'col'
 }
 
 const Card: React.FunctionComponent<ICardProps> = (props) => {
-	const { style, children, size } = props
+	const { style, children, size, direction } = props
 	let _style: React.CSSProperties = style || {}
-    const cardStyling = `${cardStyles[size]}`
+    const cardStyling = `${cardStyles[size]} ${cardDirection[direction]}`
 
 	return (
 		<article className={cardStyling} style={_style} {...props}>
