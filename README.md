@@ -11,7 +11,7 @@
 - Install command npm `npm i chill-ui`
 - NPM Package [link](https://www.npmjs.com/package/chill-ui).
 
-## Feature 功能
+## Features 功能
 - Supports keyboard movement 支持键盘指令
 
 ## Components 组件

@@ -12,3 +12,4 @@ export { default as Tab } from './Tab/Tab'
 export { default as TabList } from './Tab/TabList'
 export { default as TabPanel } from './Tab/TabPanel'
 /* Popover */
+export { Popover } from './Popover/Popover'
