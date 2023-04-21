@@ -13,7 +13,7 @@ const meta: Meta = {
 export default meta
 
 export const Tabs = () => (
-    <div className='flex flex-col '>
+    <div className='flex flex-col gap-1'>
 
     <TabContextProvider defaultSelectedTab="tab2">
       <TabList>

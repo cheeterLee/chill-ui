@@ -11,14 +11,17 @@
     "rollup": "rollup -c",
     "tailwind": "npx tailwindcss -i ./src/tailwind.css -o src/styles.css --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=2ef8d62f6853"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cheeterLee/chill-ui.git"
   },
   "keywords": [],
-  "author": "cheeter_Lee",
+  "author": {
+    "name": "cheeter_Lee"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cheeterLee/chill-ui/issues"
@@ -42,6 +45,7 @@
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.17.3",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -56,5 +60,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "readme": "ERROR: No README data found!",
+  "_id": "chill-ui@0.0.1"
 }
